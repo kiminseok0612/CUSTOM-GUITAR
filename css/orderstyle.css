@@ -1,0 +1,142 @@
+:root{
+    --background-dark: #333;
+    --text-dark: rgba(0,0,0,0.5);
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+    --c-active: #275EFE;
+    --c-active-inner: #FFFFFF;
+    --c-default: #D2D6E9;
+    --c-default-dark: #C7CBDF;
+}
+html{
+    background-color:#000;
+}
+.sign>p{
+    color:var(--text-dark);
+}
+.sign>p>a{
+    color:var(--text-lighter);
+}
+header .logo>h1{
+    color:var(--text-lighter);
+}
+section{
+    background-image:url(../img/order-background.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    flex-direction: column;
+    align-items: center;
+}
+section>div{
+    width:440px;
+    height:550px;
+    border-radius:20px;
+    margin:var(--spacing-xl);
+    overflow:scroll;
+    position:relative;
+    background-color:#FFFFFF;
+    opacity:0.9;
+}
+section>div::-webkit-scrollbar{
+    display:none;
+}
+nav>ul{
+    height:50px;
+    width:100%;
+}
+nav>ul>li{
+    float:left;
+    list-style:none;
+    height:50px;
+    width:110px;
+    text-align:center;
+}
+nav>ul>li>a{
+    line-height:50px;
+    width:110px;
+    color:var(--text-dark);
+    font-size:13pt;
+}
+.check-page{
+    z-index:-1;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:440px;
+    padding:50px 10px 10px 10px;
+}
+.check-page>img{
+    margin:10px 135px 10px 135px;
+}
+td p{
+    width:370px;
+}
+.checkbox{
+    display: table;
+    border-radius: var(--border-radius, 12px) var(--border-radius-corner, 12px) var(--border-radius, 12px) var(--border-radius, 12px);
+    position: relative;
+}
+.checkbox input{
+    appearance: none;
+    outline: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border-radius: inherit;
+    width:var(--spacing-l);
+    height:var(--spacing-l);
+}
+.checkbox input{
+    --border-color: var(--c-default);
+    --border-width: 2px;
+    box-shadow: inset 0 0 0 var(--border-width) var(--border-color);   
+}
+.checkbox input:checked{
+    --border-color: var(--c-active);
+}
+.checkbox input:not(:checked){
+    transition: box-shadow .25s;
+}
+.checkbox input:not(:checked):hover{
+    --border-width: 3px;
+    --border-color: var(--c-active);
+}
+.checkbox{
+    --border-radius: 5px;
+    --border-radius-corner: 5px;
+}
+.checkbox input:checked{
+    --border-width: 12px;
+}
+#electric{
+    display:none;
+}
+#bass{
+    display:none;
+}
+#etc{
+    display:none;
+}
+.btn{
+    appearance: none;
+    border:none;
+    background: #fff;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    width: 200px;
+    height:50px;
+    text-align: center;
+    border-radius: 7px;
+}

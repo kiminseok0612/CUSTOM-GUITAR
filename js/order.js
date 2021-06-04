@@ -1,0 +1,29 @@
+$(function(){
+    $('nav>ul>li')
+    .click(function(){
+        $('form').fadeOut(1000);
+    });
+    $('nav>ul>li')
+    .on('mouseover',function(){
+        $(this).children('a').css({color:"#275EFE",fontWeight:"bolder"});
+    })
+    .on('mouseout',function(){
+      $(this).children('a').css({color:"",fontWeight:""});
+    });
+    $('.acoustic')
+    .click(function(){
+        $('#acoustic').fadeIn(1000);
+    });
+    $('.electric')
+    .click(function(){
+        $('#electric').fadeIn(1000);
+    });
+    $('.bass')
+    .click(function(){
+        $('#bass').fadeIn(1000);
+    });
+    $('.etc')
+    .click(function(){
+        $('#etc').fadeIn(1000);
+    });
+});

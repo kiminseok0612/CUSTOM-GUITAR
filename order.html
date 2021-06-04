@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user=scalable=on,initial-scale=1">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/orderstyle.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./js/order.js"></script>
+    <title>주문하기</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <a class="logo" href="./index.html">
+                    <h1>CUSTOM GUITAR</h1>
+                </a>
+            </div>
+            <div class="sign">
+                <p><a href="./signup.html">SignUp</a> Or <a href="./signin.html">SignIn</a></p>
+            </div>
+        </div>
+    </header>
+    <section>    
+        <div>
+            <nav>
+                <ul>
+                    <li class="acoustic"><a>어쿠스틱</a></li>
+                    <li class="electric"><a>일렉기타</a></li>
+                    <li class="bass"><a>베이스</a></li>
+                    <li class="etc"><a>기타용품</a></li>
+                </ul>
+            </nav>
+            <div>
+                <form action="" id="acoustic">
+                    <div class="check-page">
+                        <img src="./img/icon1.png" width="150px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="type1">
+                                        <p>Parlor (팔러)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="type1">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="type2">
+                                        <p>Concert/"O" (콘서트)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="type2">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="type3">
+                                        <p>Grand Concert/"OO" (그랜드 콘서트)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="type3">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="type4">
+                                        <p>Auditorium/"OM" (오디토리엄)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="type4">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="type5">
+                                        <p>Dreadnought (드레드넛)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="type5">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="type6">
+                                        <p>Grand Auditorium/"OOO" (그랜드 오디토리엄)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="type6">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="type7">
+                                        <p>Jumbo (점보)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="type7">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                        <img src="./img/icon4.png" width="150px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="body-option1">
+                                        <p>EQ/이퀄라이저 포함</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="body-option1">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="body-option2">
+                                        <p>합판기타</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="body-option2">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="body-option3">
+                                        <p>탑솔리드</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="body-option3">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="body-option4">
+                                        <p>탑백솔리드</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="body-option4">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="body-option5">
+                                        <p>올솔리드</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="body-option5">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                        <img src="./img/icon5.png" width="150px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="wood1">
+                                        <p>스프루스(상판)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="wood1">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="wood2">
+                                        <p>시더(상판)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="wood2">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="wood3">
+                                        <p>메이플(측후판)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="wood3">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="wood4">
+                                        <p>로즈우드(측후판)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="wood4">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="wood5">
+                                        <p>코아(측후판)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="wood5">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="wood6">
+                                        <p>월넛(측후판)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="wood6">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="wood7">
+                                        <p>마호가니(측후판)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="wood7">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+                <form action="" id="electric">
+                    <div class="check-page">
+                        <img src="./img/icon2.png" width="150px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="elc-type1">
+                                        <p>스트라토 캐스토(Strato Caster)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-type1">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="elc-type2">
+                                        <p>레스폴(Les Paul)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-type2">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="elc-type3">
+                                        <p>텔레캐스터(Tele Caster)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-type3">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="elc-type4">
+                                        <p>슈퍼 스트랫(Super Strato Caster)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-type4">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="elc-type5">
+                                        <p>할로우 바디(Hollow Body)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-type5">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="elc-type6">
+                                        <p>SG</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-type6">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="elc-type7">
+                                        <p>PRS</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-type7">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                        <img src="./img/icon6.png" width="150px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="pickup1">
+                                        <p>싱글 픽업(Single Pickup)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="pickup1">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="pickup2">
+                                        <p>험버커 픽업(Hhumbucker Pickup)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="pickup2">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="pickup3">
+                                        <p>액티브 픽업(Active Pickup)</p>
+                                    </label>
+                                </td>
+                                <td>    
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="pickup3">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                        <img src="./img/icon7.png" width="150px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="bridge1">
+                                        <p>싱크로나이즈드 브릿지(Synchronized Bridge)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bridge1">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bridge2">
+                                        <p>윌키슨 브릿지(Wilkinson Bridge)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bridge2">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bridge3">
+                                        <p>픽스드 브릿지(Fixed Bridge)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bridge3">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bridge4">
+                                        <p>로프로엣지 브릿지(Lopro Edge Bridge)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bridge4">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bridge5">
+                                        <p>스터드 타입 브릿지(Stud Type Bridge)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bridge5">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bridge6">
+                                        <p>플로이드 로즈 브릿지(Floyd Rose Bridge)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bridge6">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bridge7">
+                                        <p>튠 오 매틱 브릿지(Tune O Matic Bridge)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bridge7">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bridge8">
+                                        <p>텔레 브릿지(Tele Bridge)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bridge8">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                        <img src="./img/icon5.png" width="150px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="elc-wood1">
+                                        <p>메이플</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-wood1">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="elc-wood2">
+                                        <p>로즈우드</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-wood2">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="elc-wood3">
+                                        <p>코아</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-wood3">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="elc-wood4">
+                                        <p>월넛</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-wood4">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="elc-wood5">
+                                        <p>마호가니</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="elc-wood5">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+                <form action="" id="bass">
+                    <div class="check-page">
+                        <img src="./img/icon3.png" width="150px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="bass-type1">
+                                        <p>일렉 베이스(Electric Bass Guitar)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bass-type1">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bass-type2">
+                                        <p>어쿠스틱 베이스(Acoustic Bass Guitar)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bass-type2">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bass-type3">
+                                        <p>랫리스 베이스(Fretless Bass Guitar)</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bass-type3">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                        <img src="./img/icon5.png" width="150px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="bass-wood1">
+                                        <p>메이플</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bass-wood1">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bass-wood2">
+                                        <p>로즈우드</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bass-wood2">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bass-wood3">
+                                        <p>코아</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bass-wood3">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bass-wood4">
+                                        <p>월넛</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bass-wood4">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bass-wood5">
+                                        <p>마호가니</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="bass-wood5">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+                <form action="" id="etc">
+                    <div class="check-page">
+                        <img src="./img/icon8.png" width="150px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="amp1">
+                                        <p>기타 앰프</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="amp1">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="amp2">
+                                        <p>일렉 앰프</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="amp2">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="amp3">
+                                        <p>베이스 앰프</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="amp3">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="amp4">
+                                        <p>멀티 앰프/미니 앰프</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="amp4">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="amp5">
+                                        <p>헤드폰/이어폰</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="amp5">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                        <img src="./img/icon9.png" width="150px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="effecter1">
+                                        <p>보컬 이펙터</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="effecter1">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="effecter2">
+                                        <p>기타 이펙터</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="effecter2">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="effecter3">
+                                        <p>베이스 이펙터</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="effecter3">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="effecter4">
+                                        <p>멀티 이펙터</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="effecter4">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button class="btn">주문하기</button>
+    </section>
+    <footer>
+        <p>custom guitar는 기타주문제작 사이트입니다. 과제용으로 제작하였으며 실제 배송이되지는 않습니다.</p>
+        <p>우송대학교 스마트IT보안전공 1학년 웹프로그래밍과제</p>
+        <p>학번/이름 : 202110752 김민석</p>
+        <p>이메일 : kiminseok0612@gmail.com</p>
+        <p>전화번호 : 010-2700-9024</p>
+    </footer>
+</body>
+</html>

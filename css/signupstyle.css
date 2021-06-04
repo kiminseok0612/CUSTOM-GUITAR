@@ -1,0 +1,80 @@
+:root{
+    --background-dark: #333;
+    --text-dark: rgba(0,0,0,0.5);
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+    --c-active: #275EFE;
+    --c-active-inner: #FFFFFF;
+    --c-default: #D2D6E9;
+    --c-default-dark: #C7CBDF;
+}
+html{
+    background-color:#000;
+}
+header .logo>h1{
+    color:var(--text-lighter);
+}
+section{
+    background-image:url(../img/order-background.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    flex-direction: column;
+    align-items: center;
+}
+section>div{
+    width:800px;
+    height:500px;
+    border-radius:20px;
+    margin:var(--spacing-xl);
+    background-color:#FFFFFF;
+    opacity:0.9;
+    padding:20px;
+}
+section>div>div{
+    height:460px;
+    width:380px;
+    padding:40px 10px;
+}
+.input-box{
+    float:left;
+}
+.input-box>h1{
+    font-size:35pt;
+}
+.input-box input{
+    margin:10px 0;
+    width:350px;
+    height:50px;
+    font-size:20pt;
+    border-bottom: solid 3px #000;
+}
+.input-box input:focus{
+    outline: none;
+    border-bottom: solid 3px var(--c-active);
+}
+.button-box{
+    float:right;
+}
+.button-box button{
+    appearance: none;
+    border:none;
+    position: relative;
+    background: var(--c-active);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    width: 300px;
+    height:80px;
+    text-align: center;
+    border-radius: 40px;
+    margin:150px 30px;;
+}
